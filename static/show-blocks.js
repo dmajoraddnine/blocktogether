@@ -11,6 +11,9 @@ $(function(){
     $('button.block-all').prop('disabled', true);
   }
 
+  // initialize datetimepickers
+  $('.datetimepicker').datetimepicker();
+
   function errorHandler(jqXHR, textStatus, errorThrown) {
     alert('Error: ' + textStatus + " " + errorThrown);
   }

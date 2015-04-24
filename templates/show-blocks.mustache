@@ -10,6 +10,49 @@
     {{/paginate}}
   </p>
   {{/own_blocks}}
+
+  <p>
+    To "soft-block" (block and then unblock) users that followed you during a certain time period, enter a date range below:
+  </p>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-1">
+        Start time:
+      </div>
+      <div class="col-sm-4">
+        <div class="form-group">
+          <div id="soft-block-start-time" class="input-group date datetimepicker">
+            <input type="text" class="form-control" />
+            <span class="input-group-addon">
+              <span class="glyphicon glyphicon-calendar"></span>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-1">
+        End time:
+      </div>
+      <div class="col-sm-4">
+        <div class="form-group">
+          <div id="soft-block-end-time" class="input-group date datetimepicker">
+            <input type="text" class="form-control" />
+            <span class="input-group-addon">
+              <span class="glyphicon glyphicon-calendar"></span>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p>
+      <button class="btn btn-info btn-sm mass-soft-block">
+        Block 'em!
+      </button>
+    </p>
+  </div>
+
   {{#own_blocks}}
   <p>
     You are blocking {{item_count}} users on Twitter (updated {{updated}}).
